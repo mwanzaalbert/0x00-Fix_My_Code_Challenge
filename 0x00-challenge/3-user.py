@@ -42,7 +42,7 @@ class User():
         else:
             # added single underscore to refer to the initialized private
             # attribute
-            self.__password = hashlib.md5(pwd.encode()).hexdigest().upper()
+            self.__password = hashlib.md5(pwd.encode()).hexdigest().lower()
 
     def is_valid_password(self, pwd):
         """
